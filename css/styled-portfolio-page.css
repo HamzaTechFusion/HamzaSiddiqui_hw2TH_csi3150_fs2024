@@ -1,0 +1,128 @@
+/* Root Variables */
+* {
+    --background-color: #003366; /* Page background color */
+    --header-footer-color: #030579; /* header and footer color */
+    --text-color: #FFFFFF; /*footer and header text xolor */
+    --section-background-color: #F0F0F0; /* section background color */
+    --section-text-color: #003366; /* section text color */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body 
+{
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--background-color); 
+    color: var(--text-color); 
+}
+
+/* Header styling */
+header 
+{
+    background: var(--header-footer-color); 
+    padding: 20px;
+    text-align: center;
+}
+
+h1 
+{
+    margin-bottom: 10px;
+}
+
+/* Navigation styling */
+nav ul 
+{
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li 
+{
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a 
+{
+    color: var(--text-color); 
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styling */
+main 
+{
+    padding: 20px;
+}
+
+main img
+{
+    height: auto;
+    width: 200px;
+    display: block;
+    border-radius: 10px;
+    border: 2px solid var(--header-footer-color);
+    margin: 20px auto;
+}
+
+/* Section styling */
+section 
+{
+    background: var(--section-background-color); 
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 5px;
+    color: var(--section-text-color); 
+}
+
+/* Blockquote styling */
+blockquote 
+{
+    border-left: 4px solid var(--header-footer-color); 
+    padding-left: 15px;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+/* Footer styling */
+footer 
+{
+    text-align: center;
+    padding: 15px 0;
+    background: var(--header-footer-color); 
+    color: var(--text-color); 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p 
+{
+    margin: 5px 0;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) 
+{
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    h1, h2, h3 {
+        text-align: center;
+    }
+
+    section {
+        padding: 10px;
+    }
+}
